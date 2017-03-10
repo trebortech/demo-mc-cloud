@@ -2,8 +2,6 @@
 {% set cliqrtagversion = pillar['cliqrtagversion'] %}
 {% set mayotagversion = pillar['mayotagversion'] %}
 
-
-# Clean workspace
 "Clean up workspace for build":
   file.missing:
     - name: '/root/mayo-cliqr'
@@ -11,9 +9,6 @@
 "Remove existing images for Cliqr Latest":
   cmd.run:
     - name: "docker rmi cliqr/worker:latest"
-
-
-# load the image from the tar file
 
 "Load Cliqr docker image from file":
   cmd.run:

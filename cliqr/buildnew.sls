@@ -12,5 +12,6 @@
 
 "Stage Cliqr docker file to build server":
   cmd.run:
-    - name: "scp /root/cliqr_worker_{{ cliqrtagversion }}.tar root@osazureclient.mayo.edu:/root/cliqr_worker_{{ cliqrtagversion}}.tar
+    - name: "scp /root/cliqr_worker_{{ cliqrtagversion }}.tar root@osazureclient.mayo.edu:/root/cliqr_worker_{{ cliqrtagversion}}.tar"
+
 
