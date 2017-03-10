@@ -23,13 +23,9 @@
   cmd.run:
     - name: "git clone ssh://tfs.mayo.edu:22/tfs/MayoClinic/DCIS/_git/mayo-cliqr"
 
-"Change to working directory":
-  cmd.run:
-    - name: "cd mayo-cliqr/cliqr-worker/azurecli-worker"
-
 "Build Cliqr image with Mayo-Cliqr source dockerfile":
   cmd.run:
-    - name: "docker build -t cliqr/worker:{{ mayotagversion }} --no-cache ."
+    - name: "docker build -t cliqr/worker:{{ mayotagversion }} --no-cache ./mayo-cliqr/cliqr-worker/azurecli-worker/"
 
 "Move to the root directory":
   cmd.run:
