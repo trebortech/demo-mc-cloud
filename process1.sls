@@ -15,7 +15,7 @@
     - pillar:
         cliqrtagversion: {{ cliqrtagversion }}
 
-"Deploy initial setup states":
+"Deploy initial build states":
   salt.state:
     - tgt: '{{ cliqrbuild }}'
     - tgt_type: list
