@@ -7,6 +7,7 @@
   salt.state:
     - tgt: 'cliqrcco1'
     - tgt_type: list
+    - ssh: True
     - sls:
       - cliqr.buildnew
     - pillar:
@@ -16,8 +17,9 @@
   salt.state:
     - tgt: 'cliqrbuild'
     - tgt_type: list
+    - ssh: True
     - sls:
-      - cliqr.buildnew
+      - mayo.buildnew
     - pillar:
         cliqrtagversion: {{ cliqrtagversion }}
         mayotagversion: {{ mayotagversion }}
