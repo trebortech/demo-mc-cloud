@@ -9,7 +9,7 @@
     - tgt_type: list
     - ssh: True
     - sls:
-      - cliqr.buildnew
+      - cloud.cliqr.buildnew
     - pillar:
         cliqrtagversion: {{ cliqrtagversion }}
 
@@ -19,7 +19,7 @@
     - tgt_type: list
     - ssh: True
     - sls:
-      - mayo.buildnew
+      - cloud.mayo.buildnew
     - pillar:
         cliqrtagversion: {{ cliqrtagversion }}
         mayotagversion: {{ mayotagversion }}
