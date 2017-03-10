@@ -3,7 +3,7 @@
 {% set mayotagversion = pillar['mayotagversion'] %}
 
 "Clean up workspace for build":
-  file.missing:
+  file.absent:
     - name: '/root/mayo-cliqr'
 
 "Remove existing images for Cliqr Latest":
