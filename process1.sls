@@ -23,3 +23,13 @@
     - pillar:
         cliqrtagversion: {{ cliqrtagversion }}
         mayotagversion: {{ mayotagversion }}
+
+"Distribute latest build to ccos":
+  salt.state:
+    - tgt: 'cliqrccos'
+    - tgt_type: list
+    - ssh: True
+    - sls:
+      - cloud.cliqr.getnewmayobuild
+    - pillar:
+        mayotagversion: {{ mayotagversion }}
