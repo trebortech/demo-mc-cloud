@@ -26,7 +26,7 @@
 
 "Distribute latest build to ccos":
   salt.state:
-    - tgt: 'cliqrcco1, cliqrcco2'
+    - tgt: 'cliqrcco1'
     - tgt_type: list
     - ssh: True
     - sls:
