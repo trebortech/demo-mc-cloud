@@ -1,7 +1,7 @@
 
 'Python pip installed':
   pkg.installed:
-    - name: python-pip
+    - name: python2-pip
 
 'Update PIP':
   cmd.run:
